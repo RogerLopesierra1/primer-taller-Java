@@ -7,8 +7,7 @@ public class Precio {
     private double descuentos;    
     private String categoria;
     
-	public Precio(double valor, int cantidad, double impuestos, double descuentos, String categoria) {
-		super();
+	public Precio(double valor, int cantidad, double impuestos, double descuentos, String categoria) {		
 		this.valor = valor;
 		this.cantidad = cantidad;
 		this.impuestos = impuestos;
