@@ -15,7 +15,7 @@ public class CuentaDeAhorros extends Cuenta{
 	@Override
 	public void consignar(float cantidad) {
 		if (activa) {
-            super.consignar(cantidad);
+            super.consignar(cantidad);            
         } else {
             System.out.println("Error: la cuenta está inactiva");
         }
@@ -25,7 +25,7 @@ public class CuentaDeAhorros extends Cuenta{
 	public void retirar(float cantidad) {
         if (activa) {
             super.retirar(cantidad);
-            activa = saldo >= 10000;
+            activa = saldo >= 10000;            
         } else {
             System.out.println("Error: la cuenta está inactiva");
         }
@@ -48,7 +48,7 @@ public class CuentaDeAhorros extends Cuenta{
 	
 	@Override
 	public void imprimir() {
-		float comision = comisionMensual + (numRetiros - 4) * 1000;
+		float comision = numRetiros > 4 ? comisionMensual + (numRetiros - 4) * 1000: 0;
 		System.out.println("Por ahora mi saldo, comision y numtransacciones seria: ");
 		System.out.println("saldo: "+(saldo-comision));
 		System.out.println("comision mensual: "+comision);
