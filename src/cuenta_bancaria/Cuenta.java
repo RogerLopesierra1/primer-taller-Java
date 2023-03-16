@@ -13,12 +13,12 @@ public class Cuenta {
 		this.tasaAnual = tasaAnual;
 	}
 	
-	public void consignar(int cantidad) {
+	public void consignar(float cantidad) {
 		saldo += cantidad;
         numConsignaciones++;
 	}
 	
-	public void retirar(int cantidad) {
+	public void retirar(float cantidad) {
 		if (cantidad <= saldo) {
             saldo -= cantidad;
             numRetiros++;
