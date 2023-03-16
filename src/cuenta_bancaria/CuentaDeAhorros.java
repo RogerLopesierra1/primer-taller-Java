@@ -25,6 +25,7 @@ public class CuentaDeAhorros extends Cuenta{
 	public void retirar(float cantidad) {
         if (activa) {
             super.retirar(cantidad);
+            activa = saldo >= 10000;
         } else {
             System.out.println("Error: la cuenta está inactiva");
         }
