@@ -76,6 +76,7 @@ public class CuentaDeAhorros extends Cuenta{
 	}
 	
 	/**
+	 * Este método sobrescribe el método imprimir de la clase padre Cuenta.
 	 * Imprime la información de la cuenta de ahorros, incluyendo el saldo actual después de aplicar 
 	 * las comisiones correspondientes, la comisión mensual, y el número total 
 	 * de transacciones (consignaciones y retiros) realizadas durante el mes.
